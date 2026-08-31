@@ -47,8 +47,8 @@ export const projects = [
     ],
   },
   {
-    id: 'apiversion-shield',
-    title: 'APIVersionShield',
+    id: 'API-Guard',
+    title: 'API-Guard',
     type: 'API GOVERNANCE',
     number: '02',
     featured: true,
@@ -70,7 +70,7 @@ export const projects = [
     outcome: 'Automated API compatibility enforcement',
     status: 'github',
     links: [
-      { label: 'Source', href: 'https://github.com/NECROX-I/APIVersionShield' },
+      { label: 'Source', href: 'https://github.com/NECROX-I/APIGuard' },
     ],
   },
   {
