@@ -1,0 +1,6 @@
+/* Skills */
+.skills{display:grid;gap:22px;margin-top:20px}
+@media(min-width:700px){.skills{grid-template-columns:1fr 1fr}}
+.skill h3{font-family:var(--mono);font-size:13px;font-weight:500;color:var(--muted)}
+.skill h3::before{content:"// ";color:var(--accent)}
+.skill .chips{margin-top:10px}.skill .chips li{font-size:13px;color:var(--text)}

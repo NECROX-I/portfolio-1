@@ -1,0 +1,16 @@
+/* Hero */
+.hero{display:grid;gap:32px;padding:clamp(36px,8vw,80px) 0 clamp(16px,4vw,32px)}
+@media(min-width:880px){.hero{grid-template-columns:1.1fr 1fr;align-items:center;gap:48px}}
+.status{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:13px;color:var(--muted);padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+.status i{width:8px;height:8px;border-radius:50%;background:var(--live);box-shadow:0 0 0 3px color-mix(in srgb,var(--live) 25%,transparent)}
+h1{margin-top:20px;font-size:clamp(36px,8vw,56px);line-height:1.05;font-weight:700;letter-spacing:-.03em}
+.role{margin-top:8px;font-family:var(--mono);font-size:clamp(15px,3.6vw,18px);color:var(--accent)}
+.lede{margin-top:18px;font-size:clamp(17px,3vw,19px);color:var(--muted);max-width:30em}
+.code{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;min-width:0}
+.code figcaption{display:flex;align-items:center;gap:6px;padding:10px 14px;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:12px;color:var(--muted)}
+.code figcaption i{width:10px;height:10px;border-radius:50%;background:var(--line)}
+.code figcaption span{margin-left:8px}
+.code pre{padding:16px 18px;overflow-x:auto;font:13.5px/1.75 var(--mono);color:var(--text)}
+.ln{display:block;white-space:pre}
+.ind{padding-left:2ch}
+.t-k{color:var(--k)}.t-p{color:var(--p)}.t-str{color:var(--s)}.t-v{color:var(--text);font-weight:600}

@@ -1,0 +1,66 @@
+// One object per project. `tags` drive the filter buttons.
+export const projects = [
+  {
+    id: 'api-guard',
+    tags: ['Backend'],
+    title: 'API-Guard',
+    type: 'API governance',
+    summary: 'Checks API changes for breaking contract changes before they reach production.',
+    highlights: [
+      'JSON Schema compatibility analysis',
+      'SAFE / WARN / BLOCK deployment decisions',
+      'Spring Security authentication and audit logging',
+    ],
+    stack: ['Java 21', 'Spring Boot', 'PostgreSQL', 'Spring Security'],
+    links: [{ label: 'Source', href: 'https://github.com/NECROX-I/APIGuard' }],
+  },
+  {
+    id: 'curate-llm',
+    tags: ['Backend'],
+    title: 'Curate-LLM',
+    type: 'Data platform',
+    summary: 'A platform for annotating text, image and multimodal datasets, with role-based access.',
+    highlights: ['FastAPI backend with PostgreSQL', 'OAuth sign-in', 'Role-based annotation workflows'],
+    stack: ['Python', 'FastAPI', 'PostgreSQL', 'SQLAlchemy'],
+    links: [{ label: 'Live', href: 'https://curate-llm.vercel.app/' }],
+  },
+  {
+    id: 'giitz',
+    tags: ['Tools'],
+    title: 'giitz',
+    type: 'Developer tool',
+    summary: 'A command-line tool that automates everyday Git tasks, including AI-written commit messages.',
+    highlights: ['Smart push and rebase', 'Tag-based release automation', 'Published on npm (120+ weekly downloads)'],
+    stack: ['Node.js', 'TypeScript', 'Bash', 'GitHub Actions'],
+    links: [
+      { label: 'npm', href: 'https://www.npmjs.com/package/@necrox/giitz' },
+      { label: 'Source', href: 'https://github.com/NECROX-I/giitz' },
+    ],
+  },
+  {
+    id: 'pingwatch',
+    tags: ['Backend', 'DevOps'],
+    title: 'PingWatch',
+    type: 'Monitoring',
+    summary: 'An uptime monitor that checks your endpoints in the background and shows their status.',
+    highlights: ['Background monitoring worker', 'JWT authentication', 'Docker-based deployment'],
+    stack: ['Node.js', 'Express', 'MongoDB', 'Docker'],
+    links: [
+      { label: 'Live', href: 'https://pingwatch-olive.vercel.app/' },
+      { label: 'Source', href: 'https://github.com/NECROX-I/pingwatch' },
+    ],
+  },
+  {
+    id: 'skillx',
+    tags: ['Full-stack'],
+    title: 'SkillX',
+    type: 'Web app',
+    summary: 'A platform where people swap skills, with session booking and a credit wallet.',
+    highlights: ['Real-time notifications with Socket.IO', 'OAuth sign-in', 'Dockerized stack'],
+    stack: ['React', 'Node.js', 'MongoDB', 'Socket.IO'],
+    links: [
+      { label: 'Live', href: 'https://skillx-alpha.vercel.app/' },
+      { label: 'Source', href: 'https://github.com/NECROX-I/skillx' },
+    ],
+  },
+]

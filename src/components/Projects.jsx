@@ -1,35 +1,24 @@
-// src/components/Projects.jsx
-
+import { useState } from 'react'
 import { projects } from '../data'
 import ProjectCard from './ProjectCard'
+import Section from './Section'
+
+// Filter buttons are built from the `tags` in data/projects.js.
+const FILTERS = ['All', ...new Set(projects.flatMap(p => p.tags))]
 
 export default function Projects() {
+  const [filter, setFilter] = useState('All')
+  const list = filter === 'All' ? projects : projects.filter(p => p.tags.includes(filter))
   return (
-    <section id="work" className="section projects-section">
-      <div className="section-container">
-
-        <div className="section-heading">
-          <div>
-            <p className="section-label">01 / Selected Work</p>
-            <h2>Projects built to solve real problems.</h2>
-          </div>
-
-          <p className="section-description">
-            Backend systems, infrastructure, developer tooling, and
-            full-stack products built with production-oriented technologies.
-          </p>
-        </div>
-
-        <div className="projects-grid">
-          {projects.map(project => (
-            <ProjectCard
-              key={project.id}
-              project={project}
-            />
-          ))}
-        </div>
-
+    <Section id="projects" title="Projects">
+      <div className="filters" role="group" aria-label="Filter projects">
+        {FILTERS.map(f => (
+          <button key={f} className="filter" aria-pressed={filter === f} onClick={() => setFilter(f)}>{f}</button>
+        ))}
       </div>
-    </section>
+      <div className="grid" key={filter}>
+        {list.map(p => <ProjectCard key={p.id} project={p} />)}
+      </div>
+    </Section>
   )
 }
