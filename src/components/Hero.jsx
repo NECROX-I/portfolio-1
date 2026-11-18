@@ -12,8 +12,8 @@ export default function Hero() {
         <p className="lede">{profile.intro}</p>
         <div className="actions">
           <a href="#contact" className="btn btn-primary">Get in touch</a>
-          <a href={profile.github} className="btn" {...ext}>GitHub ↗<NewTabHint /></a>
-          <a href={profile.resume} className="btn" {...ext}>Resume ↗<NewTabHint /></a>
+          {/* <a href={profile.github} className="btn" {...ext}>GitHub ↗<NewTabHint /></a>
+          <a href={profile.resume} className="btn" {...ext}>Resume ↗<NewTabHint /></a>*/}
         </div>
       </div>
       <CodeCard />
